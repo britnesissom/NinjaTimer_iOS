@@ -1,0 +1,593 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		52BA5E3D248341090094A0B2 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52BA5E3C248341090094A0B2 /* AppDelegate.swift */; };
+		52BA5E3F248341090094A0B2 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52BA5E3E248341090094A0B2 /* SceneDelegate.swift */; };
+		52BA5E41248341090094A0B2 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52BA5E40248341090094A0B2 /* ContentView.swift */; };
+		52BA5E432483410F0094A0B2 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 52BA5E422483410F0094A0B2 /* Assets.xcassets */; };
+		52BA5E462483410F0094A0B2 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 52BA5E452483410F0094A0B2 /* Preview Assets.xcassets */; };
+		52BA5E492483410F0094A0B2 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 52BA5E472483410F0094A0B2 /* LaunchScreen.storyboard */; };
+		52BA5E542483410F0094A0B2 /* Ninja_Timer_ControlsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52BA5E532483410F0094A0B2 /* Ninja_Timer_ControlsTests.swift */; };
+		52BA5E5F2483410F0094A0B2 /* Ninja_Timer_ControlsUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52BA5E5E2483410F0094A0B2 /* Ninja_Timer_ControlsUITests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		52BA5E502483410F0094A0B2 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 52BA5E31248341090094A0B2 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 52BA5E38248341090094A0B2;
+			remoteInfo = "Ninja Timer Controls";
+		};
+		52BA5E5B2483410F0094A0B2 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 52BA5E31248341090094A0B2 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 52BA5E38248341090094A0B2;
+			remoteInfo = "Ninja Timer Controls";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		52BA5E39248341090094A0B2 /* Ninja Timer Controls.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Ninja Timer Controls.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		52BA5E3C248341090094A0B2 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		52BA5E3E248341090094A0B2 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		52BA5E40248341090094A0B2 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		52BA5E422483410F0094A0B2 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		52BA5E452483410F0094A0B2 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		52BA5E482483410F0094A0B2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		52BA5E4A2483410F0094A0B2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		52BA5E4F2483410F0094A0B2 /* Ninja Timer ControlsTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Ninja Timer ControlsTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		52BA5E532483410F0094A0B2 /* Ninja_Timer_ControlsTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Ninja_Timer_ControlsTests.swift; sourceTree = "<group>"; };
+		52BA5E552483410F0094A0B2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		52BA5E5A2483410F0094A0B2 /* Ninja Timer ControlsUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Ninja Timer ControlsUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		52BA5E5E2483410F0094A0B2 /* Ninja_Timer_ControlsUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Ninja_Timer_ControlsUITests.swift; sourceTree = "<group>"; };
+		52BA5E602483410F0094A0B2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		52BA5E36248341090094A0B2 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		52BA5E4C2483410F0094A0B2 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		52BA5E572483410F0094A0B2 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		52BA5E30248341090094A0B2 = {
+			isa = PBXGroup;
+			children = (
+				52BA5E3B248341090094A0B2 /* Ninja Timer Controls */,
+				52BA5E522483410F0094A0B2 /* Ninja Timer ControlsTests */,
+				52BA5E5D2483410F0094A0B2 /* Ninja Timer ControlsUITests */,
+				52BA5E3A248341090094A0B2 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		52BA5E3A248341090094A0B2 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				52BA5E39248341090094A0B2 /* Ninja Timer Controls.app */,
+				52BA5E4F2483410F0094A0B2 /* Ninja Timer ControlsTests.xctest */,
+				52BA5E5A2483410F0094A0B2 /* Ninja Timer ControlsUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		52BA5E3B248341090094A0B2 /* Ninja Timer Controls */ = {
+			isa = PBXGroup;
+			children = (
+				52BA5E3C248341090094A0B2 /* AppDelegate.swift */,
+				52BA5E3E248341090094A0B2 /* SceneDelegate.swift */,
+				52BA5E40248341090094A0B2 /* ContentView.swift */,
+				52BA5E422483410F0094A0B2 /* Assets.xcassets */,
+				52BA5E472483410F0094A0B2 /* LaunchScreen.storyboard */,
+				52BA5E4A2483410F0094A0B2 /* Info.plist */,
+				52BA5E442483410F0094A0B2 /* Preview Content */,
+			);
+			path = "Ninja Timer Controls";
+			sourceTree = "<group>";
+		};
+		52BA5E442483410F0094A0B2 /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				52BA5E452483410F0094A0B2 /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		52BA5E522483410F0094A0B2 /* Ninja Timer ControlsTests */ = {
+			isa = PBXGroup;
+			children = (
+				52BA5E532483410F0094A0B2 /* Ninja_Timer_ControlsTests.swift */,
+				52BA5E552483410F0094A0B2 /* Info.plist */,
+			);
+			path = "Ninja Timer ControlsTests";
+			sourceTree = "<group>";
+		};
+		52BA5E5D2483410F0094A0B2 /* Ninja Timer ControlsUITests */ = {
+			isa = PBXGroup;
+			children = (
+				52BA5E5E2483410F0094A0B2 /* Ninja_Timer_ControlsUITests.swift */,
+				52BA5E602483410F0094A0B2 /* Info.plist */,
+			);
+			path = "Ninja Timer ControlsUITests";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		52BA5E38248341090094A0B2 /* Ninja Timer Controls */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 52BA5E632483410F0094A0B2 /* Build configuration list for PBXNativeTarget "Ninja Timer Controls" */;
+			buildPhases = (
+				52BA5E35248341090094A0B2 /* Sources */,
+				52BA5E36248341090094A0B2 /* Frameworks */,
+				52BA5E37248341090094A0B2 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Ninja Timer Controls";
+			productName = "Ninja Timer Controls";
+			productReference = 52BA5E39248341090094A0B2 /* Ninja Timer Controls.app */;
+			productType = "com.apple.product-type.application";
+		};
+		52BA5E4E2483410F0094A0B2 /* Ninja Timer ControlsTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 52BA5E662483410F0094A0B2 /* Build configuration list for PBXNativeTarget "Ninja Timer ControlsTests" */;
+			buildPhases = (
+				52BA5E4B2483410F0094A0B2 /* Sources */,
+				52BA5E4C2483410F0094A0B2 /* Frameworks */,
+				52BA5E4D2483410F0094A0B2 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				52BA5E512483410F0094A0B2 /* PBXTargetDependency */,
+			);
+			name = "Ninja Timer ControlsTests";
+			productName = "Ninja Timer ControlsTests";
+			productReference = 52BA5E4F2483410F0094A0B2 /* Ninja Timer ControlsTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		52BA5E592483410F0094A0B2 /* Ninja Timer ControlsUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 52BA5E692483410F0094A0B2 /* Build configuration list for PBXNativeTarget "Ninja Timer ControlsUITests" */;
+			buildPhases = (
+				52BA5E562483410F0094A0B2 /* Sources */,
+				52BA5E572483410F0094A0B2 /* Frameworks */,
+				52BA5E582483410F0094A0B2 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				52BA5E5C2483410F0094A0B2 /* PBXTargetDependency */,
+			);
+			name = "Ninja Timer ControlsUITests";
+			productName = "Ninja Timer ControlsUITests";
+			productReference = 52BA5E5A2483410F0094A0B2 /* Ninja Timer ControlsUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		52BA5E31248341090094A0B2 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1140;
+				LastUpgradeCheck = 1140;
+				ORGANIZATIONNAME = "Brit'ne Sissom";
+				TargetAttributes = {
+					52BA5E38248341090094A0B2 = {
+						CreatedOnToolsVersion = 11.4.1;
+					};
+					52BA5E4E2483410F0094A0B2 = {
+						CreatedOnToolsVersion = 11.4.1;
+						TestTargetID = 52BA5E38248341090094A0B2;
+					};
+					52BA5E592483410F0094A0B2 = {
+						CreatedOnToolsVersion = 11.4.1;
+						TestTargetID = 52BA5E38248341090094A0B2;
+					};
+				};
+			};
+			buildConfigurationList = 52BA5E34248341090094A0B2 /* Build configuration list for PBXProject "Ninja Timer Controls" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 52BA5E30248341090094A0B2;
+			productRefGroup = 52BA5E3A248341090094A0B2 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				52BA5E38248341090094A0B2 /* Ninja Timer Controls */,
+				52BA5E4E2483410F0094A0B2 /* Ninja Timer ControlsTests */,
+				52BA5E592483410F0094A0B2 /* Ninja Timer ControlsUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		52BA5E37248341090094A0B2 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				52BA5E492483410F0094A0B2 /* LaunchScreen.storyboard in Resources */,
+				52BA5E462483410F0094A0B2 /* Preview Assets.xcassets in Resources */,
+				52BA5E432483410F0094A0B2 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		52BA5E4D2483410F0094A0B2 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		52BA5E582483410F0094A0B2 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		52BA5E35248341090094A0B2 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				52BA5E3D248341090094A0B2 /* AppDelegate.swift in Sources */,
+				52BA5E3F248341090094A0B2 /* SceneDelegate.swift in Sources */,
+				52BA5E41248341090094A0B2 /* ContentView.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		52BA5E4B2483410F0094A0B2 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				52BA5E542483410F0094A0B2 /* Ninja_Timer_ControlsTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		52BA5E562483410F0094A0B2 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				52BA5E5F2483410F0094A0B2 /* Ninja_Timer_ControlsUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		52BA5E512483410F0094A0B2 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 52BA5E38248341090094A0B2 /* Ninja Timer Controls */;
+			targetProxy = 52BA5E502483410F0094A0B2 /* PBXContainerItemProxy */;
+		};
+		52BA5E5C2483410F0094A0B2 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 52BA5E38248341090094A0B2 /* Ninja Timer Controls */;
+			targetProxy = 52BA5E5B2483410F0094A0B2 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		52BA5E472483410F0094A0B2 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				52BA5E482483410F0094A0B2 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		52BA5E612483410F0094A0B2 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.4;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		52BA5E622483410F0094A0B2 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.4;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		52BA5E642483410F0094A0B2 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_ASSET_PATHS = "\"Ninja Timer Controls/Preview Content\"";
+				ENABLE_PREVIEWS = YES;
+				INFOPLIST_FILE = "Ninja Timer Controls/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "britnesissom.Ninja-Timer-Controls";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		52BA5E652483410F0094A0B2 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_ASSET_PATHS = "\"Ninja Timer Controls/Preview Content\"";
+				ENABLE_PREVIEWS = YES;
+				INFOPLIST_FILE = "Ninja Timer Controls/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "britnesissom.Ninja-Timer-Controls";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		52BA5E672483410F0094A0B2 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = "Ninja Timer ControlsTests/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.4;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "britnesissom.Ninja-Timer-ControlsTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Ninja Timer Controls.app/Ninja Timer Controls";
+			};
+			name = Debug;
+		};
+		52BA5E682483410F0094A0B2 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = "Ninja Timer ControlsTests/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.4;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "britnesissom.Ninja-Timer-ControlsTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Ninja Timer Controls.app/Ninja Timer Controls";
+			};
+			name = Release;
+		};
+		52BA5E6A2483410F0094A0B2 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = "Ninja Timer ControlsUITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "britnesissom.Ninja-Timer-ControlsUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "Ninja Timer Controls";
+			};
+			name = Debug;
+		};
+		52BA5E6B2483410F0094A0B2 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = "Ninja Timer ControlsUITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "britnesissom.Ninja-Timer-ControlsUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "Ninja Timer Controls";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		52BA5E34248341090094A0B2 /* Build configuration list for PBXProject "Ninja Timer Controls" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				52BA5E612483410F0094A0B2 /* Debug */,
+				52BA5E622483410F0094A0B2 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		52BA5E632483410F0094A0B2 /* Build configuration list for PBXNativeTarget "Ninja Timer Controls" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				52BA5E642483410F0094A0B2 /* Debug */,
+				52BA5E652483410F0094A0B2 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		52BA5E662483410F0094A0B2 /* Build configuration list for PBXNativeTarget "Ninja Timer ControlsTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				52BA5E672483410F0094A0B2 /* Debug */,
+				52BA5E682483410F0094A0B2 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		52BA5E692483410F0094A0B2 /* Build configuration list for PBXNativeTarget "Ninja Timer ControlsUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				52BA5E6A2483410F0094A0B2 /* Debug */,
+				52BA5E6B2483410F0094A0B2 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 52BA5E31248341090094A0B2 /* Project object */;
+}
