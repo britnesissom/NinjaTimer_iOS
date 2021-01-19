@@ -17,8 +17,8 @@ class BLEPeripheral: NSObject {
 //    public static let serviceUUID = CBUUID.init(string: "0000dfb0-0000-1000-8000-00805f9b34fb")
 //    public static let dataServiceUUID = CBUUID.init(string: "0000dfb1-0000-1000-8000-00805f9b34fb")
     
-    public static let serviceUUID = CBUUID.init(string: "f0001130-0451-4000-b000-000000000000")
-    public static let dataServiceUUID = CBUUID.init(string: "f0001131-0451-4000-b000-000000000000")
+    public static let dataServiceUUID = CBUUID.init(string: "f0001130-0451-4000-b000-000000000000")
+    public static let dataWriteCharUUID = CBUUID.init(string: "f0001131-0451-4000-b000-000000000000")
     
     override init() {
         super.init()

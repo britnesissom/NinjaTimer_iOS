@@ -29,9 +29,10 @@ class BLEControl: NSObject, ObservableObject, CBPeripheralDelegate, CBCentralMan
     
     func writeValue(withValue value: Data) {
         // Check if it has the write property
-        if cc2640r2f.getButtonChar()!.properties.contains(.writeWithoutResponse) && peripheral != nil {
+        if cc2640r2f.getButtonChar()!.properties.contains(.write) && peripheral != nil {
             print("sending value ", value)
-            peripheral.writeValue(value, for: cc2640r2f.getButtonChar()!, type: .withoutResponse)
+            peripheral.writeValue(value, for: cc2640r2f.getButtonChar()!, type: .withResponse)
+            
         }
     }
     
@@ -42,8 +43,8 @@ class BLEControl: NSObject, ObservableObject, CBPeripheralDelegate, CBCentralMan
             print("Central is not powered on")
         } else {
             self.isEnabled = true
-            print("Central scanning for", BLEPeripheral.serviceUUID)
-            centralManager.scanForPeripherals(withServices: [BLEPeripheral.serviceUUID],
+            print("Connect: central scanning for", BLEPeripheral.dataServiceUUID)
+            centralManager.scanForPeripherals(withServices: [BLEPeripheral.dataServiceUUID],
                                               options: [CBCentralManagerScanOptionAllowDuplicatesKey : true])
         }
     }
@@ -56,15 +57,21 @@ class BLEControl: NSObject, ObservableObject, CBPeripheralDelegate, CBCentralMan
             print("Central is not powered on")
         } else {
             self.isEnabled = true
-            print("Central scanning for", BLEPeripheral.serviceUUID)
-            centralManager.scanForPeripherals(withServices: [BLEPeripheral.serviceUUID],
+            print("didUpdateState: central scanning for", BLEPeripheral.dataServiceUUID)
+            centralManager.scanForPeripherals(withServices: [BLEPeripheral.dataServiceUUID],
                                               options: [CBCentralManagerScanOptionAllowDuplicatesKey : true])
         }
     }
     
     // Handles the result of the scan
     func centralManager(_ central: CBCentralManager, didDiscover peripheral: CBPeripheral, advertisementData: [String : Any], rssi RSSI: NSNumber) {
+        if let name = peripheral.name {
+            print("name: \(name), uuid: ", peripheral.identifier.uuidString)
+        } else {
+            print("uuid: ", peripheral.identifier.uuidString)
+        }
 
+        print ("Advertisement Data : \(advertisementData)")
         // We've found it so stop scan
         self.centralManager.stopScan()
 
@@ -74,7 +81,6 @@ class BLEControl: NSObject, ObservableObject, CBPeripheralDelegate, CBCentralMan
 
         // Connect!
         self.centralManager.connect(self.peripheral, options: nil)
-
     }
     
     func centralManager(_ central: CBCentralManager, didConnect peripheral: CBPeripheral) {
@@ -82,17 +88,17 @@ class BLEControl: NSObject, ObservableObject, CBPeripheralDelegate, CBCentralMan
         if peripheral == self.peripheral {
             self.isConnected = true
             print("Connected to cc2640")
-            peripheral.discoverServices([BLEPeripheral.serviceUUID])
+            peripheral.discoverServices([BLEPeripheral.dataServiceUUID])
         }
     }
     
     func peripheral(_ peripheral: CBPeripheral, didDiscoverServices error: Error?) {
         if let services = peripheral.services {
             for service in services {
-                if service.uuid == BLEPeripheral.serviceUUID {
+                if service.uuid == BLEPeripheral.dataServiceUUID {
                     print("service found")
                     //Now kick off discovery of characteristics
-                    peripheral.discoverCharacteristics([BLEPeripheral.dataServiceUUID], for: service)
+                    peripheral.discoverCharacteristics([BLEPeripheral.dataWriteCharUUID], for: service)
                     return
                 }
             }
@@ -103,11 +109,19 @@ class BLEControl: NSObject, ObservableObject, CBPeripheralDelegate, CBCentralMan
         if let characteristics = service.characteristics {
             print(characteristics)
             for characteristic in characteristics {
-                if characteristic.uuid == BLEPeripheral.dataServiceUUID {
+                if characteristic.uuid == BLEPeripheral.dataWriteCharUUID {
                     print("blePeripheral write characteristic found")
                     cc2640r2f.setButtonChar(char: characteristic)
                 }
             }
+        }
+    }
+    
+    func peripheral(_ peripheral: CBPeripheral, didWriteValueFor characteristic: CBCharacteristic, error: Error?) {
+        if error != nil {
+            print("error: ", error.debugDescription)
+        } else {
+            print("value successfully written to cc2640")
         }
     }
     
@@ -117,7 +131,7 @@ class BLEControl: NSObject, ObservableObject, CBPeripheralDelegate, CBCentralMan
             self.peripheral = nil
             self.isConnected = false
             
-            centralManager.scanForPeripherals(withServices: [BLEPeripheral.serviceUUID],
+            centralManager.scanForPeripherals(withServices: [BLEPeripheral.dataServiceUUID],
                                                   options: [CBCentralManagerScanOptionAllowDuplicatesKey : true])
         }
      }

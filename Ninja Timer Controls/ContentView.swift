@@ -10,6 +10,7 @@ import SwiftUI
 import Combine
 
 struct ContentView: View {
+    @Environment(\.colorScheme) var colorScheme
     @ObservedObject var settings = UserSettings()
     @ObservedObject var bluetooth = BLEControl.shared
     @State private var score = 0
@@ -35,32 +36,36 @@ struct ContentView: View {
         score = 0
     }
     
+    func viewSettings() {
+    
+    }
+    
     var body: some View {
+    NavigationView {
         ZStack {
             Color("AppColors").edgesIgnoringSafeArea(.all)
             VStack {
-                Text("Ninja Timer Controls")
-                    .font(.title)
                 
-                if !bluetooth.isEnabled {
-                    Text("Please enable Bluetooth in your Settings to use this app")
-                        .frame(maxWidth: .infinity)
-                        .padding(EdgeInsets(top: 30, leading: 10, bottom: 20, trailing: 10))
-                } else if !bluetooth.isConnected {
-                    Text("You must connect to the Ninja Timer via Bluetooth to use this app")
-                        .frame(maxWidth: .infinity)
-                        .padding(EdgeInsets(top: 30, leading: 10, bottom: 20, trailing: 10))
-                    Button(action: connectBLE) {
-                        Text("CONNECT")
-                        .fontWeight(.semibold)
-                        .frame(width: 150.0, height: 50)
-                        .background(Color.customGreen)
-                        .foregroundColor(Color.black)
-                        .cornerRadius(8)
-                        .overlay(RoundedRectangle(cornerRadius: 8)
-                            .stroke(Color.customGreen, lineWidth: 1))
-                    }
-                } else {
+                
+//                if !bluetooth.isEnabled {
+//                    Text("Please enable Bluetooth in your Settings to use this app")
+//                        .frame(maxWidth: .infinity)
+//                        .padding(EdgeInsets(top: 30, leading: 10, bottom: 20, trailing: 10))
+//                } else if !bluetooth.isConnected {
+//                    Text("You must connect to the Ninja Timer via Bluetooth to use this app")
+//                        .frame(maxWidth: .infinity)
+//                        .padding(EdgeInsets(top: 30, leading: 10, bottom: 20, trailing: 10))
+//                    Button(action: connectBLE) {
+//                        Text("CONNECT")
+//                        .fontWeight(.semibold)
+//                        .frame(width: 150.0, height: 50)
+//                        .background(Color.customGreen)
+//                        .foregroundColor(Color.black)
+//                        .cornerRadius(8)
+//                        .overlay(RoundedRectangle(cornerRadius: 8)
+//                            .stroke(Color.customGreen, lineWidth: 1))
+//                    }
+//                } else {
                     VStack(spacing: 40) {
                         Button(action: start) {
                             Text("START")
@@ -111,18 +116,6 @@ struct ContentView: View {
                                 .overlay(RoundedRectangle(cornerRadius: 8)
                                     .stroke(Color.customGreen, lineWidth: 1))
                             }
-//                            Button(action: resetScore) {
-//                                Text("RESET SCORE")
-//                                .fontWeight(.semibold)
-//                                .font(.system(size: 20))
-//                                .frame(width: 150.0, height: 50)
-//                                .background(Color.resetGold)
-//                                .foregroundColor(Color.black)
-//                                .cornerRadius(8)
-//                                .overlay(RoundedRectangle(cornerRadius: 8)
-//                                    .stroke(Color.resetGold, lineWidth: 1))
-//                            }.padding(.leading, 30)
-                            
                         }
                         
                         Text("Score: " + String(score))
@@ -134,12 +127,18 @@ struct ContentView: View {
                             Text("Laser Sensor").font(.system(size: 20))
                         }.padding(EdgeInsets(top: 0, leading: 30, bottom: 0, trailing: 30))
 
-                    }
-                    .padding(.top, 20)
-                }
+//                    }
+//                    .padding(.top, 20)
+                }.navigationBarTitle("Ninja Timer Controls")
+                    .navigationBarItems(trailing:
+                        Image(systemName: "gearshape.fill")
+                                .font(.system(size: 30.0))
+                                .foregroundColor(colorScheme == .dark ? Color.white : Color.black)
+                    )
             }
             .frame(minWidth: 0, maxWidth: .infinity, minHeight: 0, maxHeight: .infinity, alignment: .topLeading)
-            .padding(.top, 30)
+            //.padding(.top, 30)
+        }
         }
     }
 
@@ -197,8 +196,11 @@ extension Color {
 
 struct ContentView_Previews: PreviewProvider {
     static var previews: some View {
-        ContentView()
-           // .environment(\.colorScheme, .dark)
-            .environmentObject(BLEControl.shared)
+        Group {
+            ContentView()
+               // .environment(\.colorScheme, .dark)
+                .environmentObject(BLEControl.shared)
+
+        }
     }
 }

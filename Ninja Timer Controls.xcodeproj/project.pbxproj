@@ -7,8 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2B02C21C52CD785EB464C77A /* libPods-Ninja Timer Controls.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 0E30E3B8C2AF1CC29D0C21E7 /* libPods-Ninja Timer Controls.a */; };
 		5233924B248C95ED00D0A037 /* Model.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 52339249248C95ED00D0A037 /* Model.xcdatamodeld */; };
 		526152BB25B3E8720019AE3F /* BLEPeripheral.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52BA5E6E24874FA60094A0B2 /* BLEPeripheral.swift */; };
+		527864DC25B69AB500F0D335 /* SettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 527864DB25B69AB500F0D335 /* SettingsView.swift */; };
 		52BA5E3D248341090094A0B2 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52BA5E3C248341090094A0B2 /* AppDelegate.swift */; };
 		52BA5E3F248341090094A0B2 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52BA5E3E248341090094A0B2 /* SceneDelegate.swift */; };
 		52BA5E41248341090094A0B2 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52BA5E40248341090094A0B2 /* ContentView.swift */; };
@@ -39,7 +41,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		0E30E3B8C2AF1CC29D0C21E7 /* libPods-Ninja Timer Controls.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-Ninja Timer Controls.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		5233924A248C95ED00D0A037 /* Model.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Model.xcdatamodel; sourceTree = "<group>"; };
+		527864DB25B69AB500F0D335 /* SettingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsView.swift; sourceTree = "<group>"; };
 		52BA5E39248341090094A0B2 /* Ninja Timer Controls.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Ninja Timer Controls.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		52BA5E3C248341090094A0B2 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		52BA5E3E248341090094A0B2 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -56,6 +60,8 @@
 		52BA5E602483410F0094A0B2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		52BA5E6C248742690094A0B2 /* BLEControl.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BLEControl.swift; sourceTree = "<group>"; };
 		52BA5E6E24874FA60094A0B2 /* BLEPeripheral.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BLEPeripheral.swift; sourceTree = "<group>"; };
+		90688E4DE05489C60359D130 /* Pods-Ninja Timer Controls.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Ninja Timer Controls.debug.xcconfig"; path = "Target Support Files/Pods-Ninja Timer Controls/Pods-Ninja Timer Controls.debug.xcconfig"; sourceTree = "<group>"; };
+		AE03FA99EBC9382B88BCE350 /* Pods-Ninja Timer Controls.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Ninja Timer Controls.release.xcconfig"; path = "Target Support Files/Pods-Ninja Timer Controls/Pods-Ninja Timer Controls.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -63,6 +69,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2B02C21C52CD785EB464C77A /* libPods-Ninja Timer Controls.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -83,6 +90,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		09C98A2E58B1EF045E989A7F /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				0E30E3B8C2AF1CC29D0C21E7 /* libPods-Ninja Timer Controls.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		52BA5E30248341090094A0B2 = {
 			isa = PBXGroup;
 			children = (
@@ -90,6 +105,8 @@
 				52BA5E522483410F0094A0B2 /* Ninja Timer ControlsTests */,
 				52BA5E5D2483410F0094A0B2 /* Ninja Timer ControlsUITests */,
 				52BA5E3A248341090094A0B2 /* Products */,
+				85740699DBC40D83CCB625DB /* Pods */,
+				09C98A2E58B1EF045E989A7F /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -116,6 +133,7 @@
 				52BA5E6C248742690094A0B2 /* BLEControl.swift */,
 				52BA5E6E24874FA60094A0B2 /* BLEPeripheral.swift */,
 				52339249248C95ED00D0A037 /* Model.xcdatamodeld */,
+				527864DB25B69AB500F0D335 /* SettingsView.swift */,
 			);
 			path = "Ninja Timer Controls";
 			sourceTree = "<group>";
@@ -146,6 +164,15 @@
 			path = "Ninja Timer ControlsUITests";
 			sourceTree = "<group>";
 		};
+		85740699DBC40D83CCB625DB /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				90688E4DE05489C60359D130 /* Pods-Ninja Timer Controls.debug.xcconfig */,
+				AE03FA99EBC9382B88BCE350 /* Pods-Ninja Timer Controls.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -153,6 +180,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 52BA5E632483410F0094A0B2 /* Build configuration list for PBXNativeTarget "Ninja Timer Controls" */;
 			buildPhases = (
+				E0230398B55EA770B8AB1159 /* [CP] Check Pods Manifest.lock */,
 				52BA5E35248341090094A0B2 /* Sources */,
 				52BA5E36248341090094A0B2 /* Frameworks */,
 				52BA5E37248341090094A0B2 /* Resources */,
@@ -209,7 +237,7 @@
 			isa = PBXProject;
 			attributes = {
 				LastSwiftUpdateCheck = 1140;
-				LastUpgradeCheck = 1140;
+				LastUpgradeCheck = 1230;
 				ORGANIZATIONNAME = "Brit'ne Sissom";
 				TargetAttributes = {
 					52BA5E38248341090094A0B2 = {
@@ -272,6 +300,31 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		E0230398B55EA770B8AB1159 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Ninja Timer Controls-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		52BA5E35248341090094A0B2 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
@@ -281,6 +334,7 @@
 				52BA5E3F248341090094A0B2 /* SceneDelegate.swift in Sources */,
 				52BA5E6F24874FA60094A0B2 /* BLEPeripheral.swift in Sources */,
 				52BA5E41248341090094A0B2 /* ContentView.swift in Sources */,
+				527864DC25B69AB500F0D335 /* SettingsView.swift in Sources */,
 				52BA5E6D248742690094A0B2 /* BLEControl.swift in Sources */,
 				5233924B248C95ED00D0A037 /* Model.xcdatamodeld in Sources */,
 			);
@@ -356,6 +410,7 @@
 				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
 				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
 				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
 				CLANG_WARN_STRICT_PROTOTYPES = YES;
 				CLANG_WARN_SUSPICIOUS_MOVE = YES;
@@ -416,6 +471,7 @@
 				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
 				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
 				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
 				CLANG_WARN_STRICT_PROTOTYPES = YES;
 				CLANG_WARN_SUSPICIOUS_MOVE = YES;
@@ -446,6 +502,7 @@
 		};
 		52BA5E642483410F0094A0B2 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 90688E4DE05489C60359D130 /* Pods-Ninja Timer Controls.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
@@ -469,6 +526,7 @@
 		};
 		52BA5E652483410F0094A0B2 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = AE03FA99EBC9382B88BCE350 /* Pods-Ninja Timer Controls.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
